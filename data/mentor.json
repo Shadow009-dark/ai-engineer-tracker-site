@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "title": "Mentor Məsləhəti",
+    "author": "AI Engineer mentor (peşəkar tövsiyələr)",
+    "note": "Bu bölmə yol xəritəsini necə daha səmərəli keçmək barədə real, sınaqdan keçmiş məsləhətləri ehtiva edir."
+  },
+  "sections": [
+    {
+      "id": "study",
+      "icon": "📚",
+      "title": "Necə səmərəli öyrənmək",
+      "items": [
+        {
+          "title": "Aktiv xatırlama (active recall) — video izləmək öyrənmək deyil",
+          "body": "Video izləmək passiv fəaliyyətdir və beyni yormur, ona görə də 'öyrəndim' hissi yaranır amma bilik qalmır. Hər günün sonunda 'Bilməli olduğunuz' suallarını kitaba baxmadan, səsli cavablandır. Cavab verə bilmədiyin sual həmin günün əsl tapşırığıdır."
+        },
+        {
+          "title": "Spaced repetition — Anki kartları",
+          "body": "Hər gün 5-10 yeni kart yarat (anlayış, düstur, səhv təcrübə). Təkrarlama intervalını 1-3-7-14 gün kimi saxla. 6 ayın sonunda 800-1000 kart müsahibə hazırlığında ən böyük silahın olacaq."
+        },
+        {
+          "title": "70/30 qaydası — kod yazmaq və izləmək",
+          "body": "Vaxtın 70%-i klaviaturada olmalıdır: kod yazmaq, debug etmək, notebook qurmaq. 30%-i video oxu/izləməkdir. Video izləyərkən kod yazmağı dayandırma — dayandır və özün yaz."
+        },
+        {
+          "title": "Feynman texnikası — izah edə bilmirsənsə, bilmirsən",
+          "body": "Həftədə ən azı bir mövzuyu heç nə bilməyən adama izah et (dost, qardaş, hətta boş otaqda özünə). İzahda ilişdiyin yer bilik boşluğudur. Həmin yeri həmin gün bağla."
+        },
+        {
+          "title": "Build in public — öyrəndiyini yaz",
+          "body": "Hər həftə LinkedIn və ya GitHub-da 1 qısa post yaz: nə öyrəndim, nəyi sındırdım, nəyi düzəltdim. Bu həm xatırlamanı gücləndirir, həm də 6 ayın sonunda sənin adına işə götürən gətirir."
+        },
+        {
+          "title": "Günü iki bloka böl",
+          "body": "2-4 saatı 'öyrənmə' (video + oxu) və 'tətbiq' (kod + tapşırıq) bloklarına böl, aralarında 10 dəqiqə fasilə ver. Dərin iş üçün telefonu başqa otaqda saxla. Keyfiyyətli 2 saat, yorğun 5 saatdan faydalıdır."
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "icon": "🚀",
+      "title": "Portfolio layihələri — hansı sıra ilə qurmaq lazımdır",
+      "items": [
+        {
+          "title": "1. Data analizi (EDA + SQL + dashboard)",
+          "body": "Real dataset üzərində başdan-sona analiz: təmizləmə, SQL sorğuları, 8-10 vizualizasiya, yazılı nəticə. İşə götürənə 'data ilə işləyə bilirəm' mesajını verir və ən sürətli qurulan layihədir (7-10 gün)."
+        },
+        {
+          "title": "2. Klassik ML + deployment",
+          "body": "Tabular dataset, 3-4 model müqayisəsi, cross-validation, tuning, FastAPI servisi, Dockerfile. Burada əsas mesaj 'model qurmaqdan çox, onu işlək hala gətirə bilirəm'dir. Junior vakansiyalarında ən çox qiymətləndirilən layihədir."
+        },
+        {
+          "title": "3. Dərin öyrənmə (CV və ya NLP)",
+          "body": "Transfer learning ilə 85%+ dəqiqlik, səhv analizi, Grad-CAM və ya attention vizualizasiyası, Gradio demo. Bu layihə modelin içini anladığını göstərir — müsahibədə ən çox sual buradan gəlir."
+        },
+        {
+          "title": "4. RAG tətbiqi (LLM)",
+          "body": "Öz sənəd toplusun üzərində sual-cavab: chunking, embedding, vektor bazası, reranking, sitatlı cavab, 30 suallıq eval dəsti və nəticələrin cədvəli. 2026-cı ildə AI Engineer elanlarının əksəriyyəti RAG tələb edir, demo mütləqdir."
+        },
+        {
+          "title": "5. Agent / workflow tətbiqi",
+          "body": "3-5 tool istifadə edən agent, memory, trace/loglar, xəta idarəsi, xərc hesablaması. Mesaj: 'LLM-i sadəcə çağırmıram, real iş axını qururam'. Observability (trace) hissəsini README-də göstər."
+        },
+        {
+          "title": "6. MLOps pipeline",
+          "body": "Model -> API -> Docker -> GitHub Actions (test + build + deploy) -> monitorinq (drift hesabatı) -> MLflow registry. Bu layihə 'production-da model saxlaya bilirəm' təsiri bağışlayır və digər 5 layihədən səni ayırır."
+        },
+        {
+          "title": "Layihələri bitirmək qaydası",
+          "body": "Yarımçıq 6 layihə, tamamlanmış 3 layihədən qat-qat zəif təsir bağışlayır. Hər layihə üçün: README (problem -> yanaşma -> nəticə -> necə işə salınır), ekran görüntüsü, canlı demo linki, 2 dəqiqəlik video. Bitmədikcə yenisinə başlama."
+        }
+      ]
+    },
+    {
+      "id": "profile",
+      "icon": "🌐",
+      "title": "GitHub, Kaggle və LinkedIn profili",
+      "items": [
+        {
+          "title": "GitHub: profil işə götürənin ilk baxdığı yerdir",
+          "body": "Profil README-i 3 cümlə ilə kim olduğunu və nəyin üzərində işlədiyini yaz. 6 repo pin et, hər birinin başlığında texnologiya olsun (məs. 'RAG over PDF docs — FastAPI + Qdrant'). Yaşıl contribution qrafiki davamlılığı göstərir: hər gün ən azı 1 commit."
+        },
+        {
+          "title": "Hər repo peşəkar görünməlidir",
+          "body": "README-də: problem, dataset linki, arxitektura diaqramı, nəticələr cədvəli, necə işə salınır, lisenziya. tests/ qovluğu və requirements.txt mütləqdir. Hər şeyi bir notebook-da atmaq yerinə modullara böl."
+        },
+        {
+          "title": "Kaggle: 2-3 publik notebook, 1 yarışma",
+          "body": "Mükafat almaq məcburi deyil, amma ən azı bir yarışmada iştirak edib notebook paylaşmaq data ilə işləmə qabiliyyətini göstərir. Kamida 1 publik EDA notebook və 1 modeling notebook yaz, dataset linki ilə birlikdə GitHub-a bağla."
+        },
+        {
+          "title": "LinkedIn: AI Engineer kimliyini qur",
+          "body": "Başlıq: 'AI Engineer | Python, PyTorch, LLM/RAG'. Bio-da 3 layihə linki. Həftədə 1 paylaşım (öyrəndiyin bir şey + layihə skrinşotu). Hədəf şirkətlərdə çalışanlarla əlaqə saxla, müsahibə haqqında yox, işləri haqqında sual ver."
+        },
+        {
+          "title": "CV: 1 səhifə, nəticə əsaslı",
+          "body": "Hər bullet nəticə ilə bitsin: 'CIFAR-10-da transfer learning ilə 92% dəqiqlik', 'RAG-də retrieval dəqiqliyini 61%-dən 84%-ə qaldırdım'. Vaxt və texnologiya yaz. Sertifikatlar ən sonda, 1-2 sətirdə."
+        }
+      ]
+    },
+    {
+      "id": "interview",
+      "icon": "🎯",
+      "title": "Müsahibə hazırlığı",
+      "items": [
+        {
+          "title": "ML nəzəriyyəsi: 100 sual, 50 yazılı cavab",
+          "body": "Bias-variance, overfitting, cross-validation, precision/recall/F1, ROC-AUC, requlyarizasiya, gradient descent növləri, ağac/boosting, PCA, klasterləmə. Hər cavabı 90 saniyəyə izah edəcək şəkildə yaz — müsahibədə uzun nitq zəiflik sayılır."
+        },
+        {
+          "title": "Kodlaşdırma: 100-150 məsələ + Pandas/SQL tapşırıqları",
+          "body": "LeetCode-da əsas pattern-lər (iki göstərici, sliding window, hash map, BFS/DFS, sort + binary search). AI rollarında ən çox verilən tapşırıq 'Pandas ilə data təmizlə' və 'SQL ilə qruplaşdır' olur — bunlara xüsusi hazırlaş."
+        },
+        {
+          "title": "ML system design: 10 suala yazılı cavab",
+          "body": "Sual strukturunu əzbərlə: tələblər -> data -> model seçimi -> metrikalar -> xidmət arxitekturası -> monitorinq -> miqyas və xərc. Tövsiyə sistemi, axtarış, RAG, fraud detection suallarını hazırlamaq kifayətdir."
+        },
+        {
+          "title": "Layihələrini 2 dəqiqədə izah etməyə hazır ol",
+          "body": "Hər portfolio layihəsi üçün 3 suala cavab yaz: hansı problemi həll etdin, niyə bu yanaşmanı seçdin, nəyi daha yaxşı edərdin. Müsahibələrin 60%-i buradan başlayır və buradan sonrası sənin güclü tərəfinə keçir."
+        },
+        {
+          "title": "Davranış sualları: STAR metodu",
+          "body": "Situation-Task-Action-Result strukturunda 6-8 hekayə hazırla (könüllü iş, komanda layihəsi, çətin bug, öyrənmə seçimi). 'Nə vaxt uğursuz oldun?' sualına hazır cavabın olsun — uğursuzluq + dərs birlikdə verilməlidir."
+        },
+        {
+          "title": "Hər müsahibədən sonra 30 dəqiqə refleksiya",
+          "body": "Müsahibədən dərhal sonra: hansı suallar çətin oldu, nəyi bilmirdim, nəyi yaxşı cavablandırdım. Növbəti 48 saatda ən çox ilişdiyin 3 mövzunu təkrar et. 5 müsahibədən sonra sənin 'suallar bankı' olacaq və uğur nisbətin kəskin artacaq."
+        }
+      ]
+    },
+    {
+      "id": "mistakes",
+      "icon": "⚠️",
+      "title": "Tipik səhvlər və burnout-dan qorunma",
+      "items": [
+        {
+          "title": "Tutorial cəhənnəmi (tutorial hell)",
+          "body": "Yeni kurs açmaq həmişə asandır, özün bitirmək çətindir. Qayda: bir mənbəni bitirməmiş yenisinə başlama. Hər kursdan sonra mütləq kiçik layihə yaz, əks halda 3 ay sonra heç nə qalmır."
+        },
+        {
+          "title": "Hər şeyi öyrənməyə çalışmaq",
+          "body": "Riyaziyyat kitabını əvvəldən axıra oxumaq 6 ayı yeyər və işə yaramaz. Yalnız yol xəritəsində lazım olan dərinlikdə öyrən, sonra lazım olanda geri qayıt. 'Kifayət qədər yaxşı' bilik + tətbiq, mükəmməllikdən güclüdür."
+        },
+        {
+          "title": "Layihələri bitirməmək və görünməmək",
+          "body": "Ən bahalı səhv: yaxşı iş görüb heç yerdə göstərməmək. GitHub-a push et, README yaz, LinkedIn-də paylaş. Gizli öyrənmək, işə götürən üçün 'öyrənməmişəm' kimidir."
+        },
+        {
+          "title": "Burnout: 7 gün işləmək uzunmüddətli zərərdir",
+          "body": "Həftənin 7-ci günü mütləq təkrardır və yüngüldür (planda belədir). Yuxu 7-8 saat, həftədə 3 dəfə 20 dəqiqə hərəkət, gündə 20 dəqiqə ekran yoxdur. Yorğunsansa dərsin 3 saat yox, 30 dəqiqə et — amma davamlılığı pozma."
+        },
+        {
+          "title": "Tək öyrənmək",
+          "body": "Bir 'study buddy' və ya kiçik qrup tap (Discord, LinkedIn, universitet). Həftədə 1 dəfə 30 dəqiqə öyrəndiklərini danışmaq, 5 saatlıq oxuya bərabər dəyər verir. Həm motivasiya, həm izah bacarığı, həm də iş imkanı."
+        },
+        {
+          "title": "'Hazır olanda müraciət edərəm' gözləməsi",
+          "body": "70% hazır olanda müraciət etməyə başla. İlk müsahibələr məşqdir, uğursuzluq normal və faydalıdır. Hər imtina səni növbəti müsahibəyə hazırlaşdırır; heç müraciət etməmək isə heç nə öyrətmir."
+        }
+      ]
+    },
+    {
+      "id": "honest",
+      "icon": "🔍",
+      "title": "Açıq danışaq: nəyi atlamaq, nə overhyped, nə vacibdir",
+      "items": [
+        {
+          "title": "Nəyi atlaya bilərsən (indi)",
+          "body": "Dərin riyazi isbatlar (istifadə səviyyəsində bilsən kifayətdir), Kubernetes-in dərinliyi, 5 fərqli ML framework eyni vaxtda, 'sıfırdan GPT öyrətmək', çox qatlı frontend işləri, GPU-ları özün idarə etmək. Bunlar işə girdikdən sonra tələb olunanda öyrənilir."
+        },
+        {
+          "title": "Nə overhyped-dir",
+          "body": "Hər həftə çıxan 'yeni model adı' yarışı, no-code AI builder-lər (junior vəzifəsi qazandırmır), 'AI ilə pul qazan' kursları, və sonsuz sertifikat yığmaq. Sertifikat işə götürməyə inandırmır — işlək layihələr inandırır."
+        },
+        {
+          "title": "Ən vacib 6 şey (işə götürülmək üçün)",
+          "body": "1) Python + git + təmiz kod; 2) data ilə işləmək (Pandas + SQL); 3) problemi başdan-sona aparmaq; 4) modeli deploy etmək (FastAPI + Docker); 5) LLM/RAG praktikası; 6) yazılı və şifahi kommunikasiya. Bu altısı nəzəriyyədən çox, praktikada göstərilməlidir."
+        },
+        {
+          "title": "İşə götürmə reallığı",
+          "body": "Junior 'AI Engineer' elanları azdır və rəqabət yüksəkdir; 'AI tətbiq mühəndisi' (application engineer), 'ML engineer', 'data scientist' elanları daha çoxdur — bu adlarla da müraciət et. Referral (tanış vasitəsilə) müsahibə şansını 3-5 dəfə artırır, ona görə icmada fəal ol."
+        },
+        {
+          "title": "İlk təcrübəni necə tez qazanmaq olar",
+          "body": "Freelance (kiçik AI axtarış/chatbot işləri), universitet layihələri, açıq mənbə töhfələri və şirkətlərə könüllü demo qurmaq. 'Sizin üçün bir günə RAG prototipi hazırladım' — bu cümlə CV-dən güclüdür və real müsahibələr gətirir."
+        }
+      ]
+    }
+  ],
+  "weeklyTips": [
+    "Bu həftə hər gün 10 dəqiqə əvvəlki günün kartlarını təkrarla — 6 ayın sonunda bu vərdiş fərqi yaradacaq.",
+    "Bir repo-nu tamamilə cilala: README, ekran görüntüsü, canlı demo. Bitirilmiş iş yarımçıq işdən 10 dəfə dəyərlidir.",
+    "Bugün öyrəndiyin mövzunu heç bilməyən adama izah et — 15 dəqiqəlik izah, 2 saatlıq oxudan çox qazandırır.",
+    "Hər gün GitHub-a ən azı 1 commit at. Yaşıl kvadratlar davamlılığın sübutudur.",
+    "Kod yazarkən səsli danış. Müsahibədə 'necə düşünürsən' sualına bu vərdiş cavab verəcək.",
+    "Bu həftə bir açıq mənbə layihəsinə kiçik töhfə ver (sənəd düzəlişi belə olar).",
+    "Yorulmusansa 3 saat yox, 30 dəqiqə işlə — amma zənciri qırma. Davamlılıq intensivlikdən üstündür.",
+    "Bu həftə LinkedIn-də öyrəndiyin bir şeyi paylaş və layihə linkini əlavə et.",
+    "Bir müsahibə sualını seç və cavabı 90 saniyəyə sığdır — uzun cavab zəif cavabdır.",
+    "Data təmizləməyə 1 saat ayır: bütün layihələrdə vaxtın 60%-i buraya gedir.",
+    "Bu həftə yeni kitabxana öyrənmə, əvəzində mövcud layihəni yaxşılaşdır: testlər və ya xəta idarəsi əlavə et.",
+    "6 ay sonra harda olmaq istədiyini 1 cümlə ilə yaz və bu həftə ona xidmət edən bir addım at.",
+    "Modelin nəticəsini rəqəmlə ifadə etməyi öyrən: '84% F1, baseline 71%'. Rəqəm inandırır, söz yox."
+  ]
+}

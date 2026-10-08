@@ -1,0 +1,57 @@
+# Automatically refreshes the progress block in README.md:
+#   "Day 45/180, 25% done, 12-day streak"
+#
+# Triggers:
+#   - when data/progress.json or data/plan.json changes (on every sync commit)
+#   - daily at 06:00 UTC so the "Day X/180" counter advances on its own
+#   - manually via the "Run workflow" button
+#
+# No third-party actions are used (only actions/checkout + plain git commands).
+
+name: Progress README
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/progress.json"
+      - "data/plan.json"
+      - "scripts/update_readme.py"
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: progress-readme
+  cancel-in-progress: true
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo-nu yüklə
+        uses: actions/checkout@v4
+
+      - name: Python qur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: README gedişat blokunu yenilə
+        run: python scripts/update_readme.py
+
+      - name: Dəyişiklik varsa commit et
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- README.md; then
+            echo "README.md dəyişmədi — commit lazım deyil."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore(progress): README gedişat blokunu yenilə [skip ci]"
+          git push

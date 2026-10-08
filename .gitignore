@@ -1,0 +1,23 @@
+# Python (tools/ və scripts/ üçün)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Lokal dev server faylları
+.devserver.log
+.devserver.pid
+
+# HEÇ VAXT commit etmə: token, sirr, şəxsi məlumatlar
+.env
+.env.*
+*.token
+secrets.json

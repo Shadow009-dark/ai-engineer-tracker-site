@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Engineer Tracker — 180 günlük yol xəritəsi</title>
+<meta name="description" content="Sıfırdan AI Engineer səviyyəsinə aparan 180 günlük şəxsi öyrənmə izləyicisi. Gündəlik tapşırıqlar, GitHub sinxronizasiyası, mentor məsləhətləri." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark">AI</span>
+    <div class="brand-text">
+      <strong>AI Engineer Tracker</strong>
+      <span id="brand-sub">180 günlük yol xəritəsi</span>
+    </div>
+  </div>
+
+  <div class="topbar-actions">
+    <button id="sync-chip" class="chip" type="button" title="GitHub sinxronizasiya statusu">
+      <span class="dot" id="sync-dot"></span><span id="sync-text">Yerli rejim</span>
+    </button>
+    <button id="btn-sync-now" class="btn btn-ghost btn-sm" type="button" title="İndi sinxronla">⟳ Sinxronla</button>
+    <button id="btn-theme" class="btn btn-ghost btn-sm" type="button" title="İşıq/qaranlıq rejim (T)">🌙</button>
+    <button id="btn-help" class="btn btn-ghost btn-sm" type="button" title="Klaviatura qısayolları (?)">?</button>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab is-active" data-view="dashboard" type="button">📅 Bugün</button>
+  <button class="tab" data-view="plan" type="button">🗺️ Plan</button>
+  <button class="tab" data-view="calendar" type="button">🗓️ Təqvim</button>
+  <button class="tab" data-view="stats" type="button">📊 Statistika</button>
+  <button class="tab" data-view="mentor" type="button">🧠 Mentor Məsləhəti</button>
+  <button class="tab" data-view="settings" type="button">⚙️ Ayarlar</button>
+</nav>
+
+<main id="main">
+
+  <!-- ==================== DASHBOARD ==================== -->
+  <section class="view" id="view-dashboard">
+    <div class="hero card">
+      <div class="hero-main">
+        <div class="hero-day" id="hero-day">Gün —/180</div>
+        <h1 id="hero-topic">Plan yüklənir...</h1>
+        <div class="hero-meta">
+          <span class="pill" id="hero-date">—</span>
+          <span class="pill" id="hero-phase">—</span>
+          <span class="pill" id="hero-type">—</span>
+          <span class="pill" id="hero-minutes">—</span>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="ring" id="today-ring"><span id="today-pct">0%</span></div>
+        <div class="hero-side-label">Bugünün gedişatı</div>
+      </div>
+    </div>
+
+    <div class="stat-grid" id="stat-grid">
+      <div class="stat card"><span class="stat-value" id="stat-streak">0</span><span class="stat-label">🔥 Ardıcıl gün (streak)</span></div>
+      <div class="stat card"><span class="stat-value" id="stat-done-days">0</span><span class="stat-label">✅ Tamamlanmış gün</span></div>
+      <div class="stat card"><span class="stat-value" id="stat-overall">0%</span><span class="stat-label">📈 Ümumi gedişat</span></div>
+      <div class="stat card"><span class="stat-value" id="stat-today-left">0</span><span class="stat-label">⏳ Bugün qalan tapşırıq</span></div>
+      <div class="stat card"><span class="stat-value" id="stat-week-left">0</span><span class="stat-label">🗓️ Bu həftə qalan</span></div>
+      <div class="stat card"><span class="stat-value" id="stat-hours">0</span><span class="stat-label">⏱️ Ümumi saat</span></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card" id="today-card">
+        <div class="card-head">
+          <h2>Bugün nə etməliyəm</h2>
+          <div class="card-head-actions">
+            <button class="btn btn-primary btn-sm" id="btn-day-done" type="button">✅ Tamamlandı (D)</button>
+            <button class="btn btn-ghost btn-sm" id="btn-day-skip" type="button">⏭️ Keç (S)</button>
+            <button class="btn btn-ghost btn-sm" id="btn-day-note" type="button">📝 Qeyd əlavə et (N)</button>
+            <button class="btn btn-ghost btn-sm" id="btn-day-reschedule" type="button">📆 Köçür (R)</button>
+          </div>
+        </div>
+        <div id="today-body" class="day-body"></div>
+      </div>
+
+      <div class="stack">
+        <div class="card" id="overdue-card">
+          <div class="card-head"><h2>⚠️ Gecikmiş tapşırıqlar</h2><span class="pill" id="overdue-count">0</span></div>
+          <div id="overdue-body" class="list-body"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h2>🧪 İndiyə qədər bilməli olduğun suallar</h2><span class="pill" id="mustknow-count">0</span></div>
+          <p class="muted small">Bu siyahı bugünə qədər keçdiyin günlərin özünüyoxlama suallarıdır. Cavab verə bilmədiyin sualı təkrarlamağı unutma.</p>
+          <div id="mustknow-body" class="list-body scroll-300"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-head"><h2>💬 Günün refleksiyası</h2></div>
+          <label class="field">
+            <span>Bu gün nə öyrəndim?</span>
+            <textarea id="refl-learned" rows="2" placeholder="Məsələn: groupby ilə qruplaşdırma və agg funksiyalarını öyrəndim..."></textarea>
+          </label>
+          <label class="field">
+            <span>Nə çətin oldu?</span>
+            <textarea id="refl-hard" rows="2" placeholder="Məsələn: merge zamanı sətir sayının artması məni çaşdırdı..."></textarea>
+          </label>
+          <label class="field">
+            <span>Sabah nə edəcəm?</span>
+            <textarea id="refl-tomorrow" rows="2" placeholder="Məsələn: merge və pivot_table nümunələrini təkrar edəcəm..."></textarea>
+          </label>
+          <div class="row-between">
+            <span class="muted small" id="refl-status">Refleksiya yadda saxlanılır və GitHub-a log kimi göndərilir.</span>
+            <button class="btn btn-primary btn-sm" id="btn-save-reflection" type="button">💾 Refleksiyanı yadda saxla</button>
+          </div>
+        </div>
+
+        <div class="card" id="tip-card">
+          <div class="card-head"><h2>🧠 Həftənin mentor məsləhəti</h2></div>
+          <p id="tip-text" class="tip-text">—</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-head"><h2>📉 Həftəlik gedişat (son 7 gün)</h2></div>
+        <canvas id="chart-week" class="chart" height="220"></canvas>
+      </div>
+      <div class="card">
+        <div class="card-head"><h2>📈 Aylıq gedişat (son 30 gün)</h2></div>
+        <canvas id="chart-month" class="chart" height="220"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>🟩 Fəaliyyət xəritəsi (contribution heatmap)</h2><span class="muted small" id="heatmap-legend">az → çox</span></div>
+      <div id="heatmap" class="heatmap"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>🧭 Faza gedişatı</h2></div>
+      <div id="phase-bars" class="phase-bars"></div>
+    </div>
+  </section>
+
+  <!-- ==================== PLAN ==================== -->
+  <section class="view" id="view-plan" hidden>
+    <div class="card">
+      <div class="card-head"><h2>🗺️ 180 günlük plan</h2><span class="pill" id="plan-count">0 gün</span></div>
+      <div class="filters">
+        <label class="field inline">
+          <span>Axtarış</span>
+          <input id="filter-q" type="search" placeholder="Mövzu, tapşırıq, kanal... (/) " />
+        </label>
+        <label class="field inline">
+          <span>Faza</span>
+          <select id="filter-phase"><option value="">Hamısı</option></select>
+        </label>
+        <label class="field inline">
+          <span>Status</span>
+          <select id="filter-status">
+            <option value="">Hamısı</option>
+            <option value="done">Tamamlanmış</option>
+            <option value="partial">Qismən</option>
+            <option value="pending">Başlanmamış</option>
+            <option value="skipped">Keçilmiş</option>
+            <option value="overdue">Gecikmiş</option>
+          </select>
+        </label>
+        <label class="field inline">
+          <span>Tip</span>
+          <select id="filter-type">
+            <option value="">Hamısı</option>
+            <option value="study">Öyrənmə günü</option>
+            <option value="review">Təkrar günü</option>
+          </select>
+        </label>
+        <button class="btn btn-ghost btn-sm" id="btn-plan-edit-toggle" type="button">✏️ Planı redaktə et</button>
+      </div>
+      <div id="plan-list" class="plan-list"></div>
+    </div>
+  </section>
+
+  <!-- ==================== CALENDAR ==================== -->
+  <section class="view" id="view-calendar" hidden>
+    <div class="card">
+      <div class="card-head">
+        <h2>🗓️ Təqvim</h2>
+        <div class="card-head-actions">
+          <button class="btn btn-ghost btn-sm" id="cal-prev" type="button">←</button>
+          <span id="cal-label" class="pill">—</span>
+          <button class="btn btn-ghost btn-sm" id="cal-next" type="button">→</button>
+        </div>
+      </div>
+      <div class="legend">
+        <span><i class="sw sw-done"></i>Tamamlanmış</span>
+        <span><i class="sw sw-partial"></i>Qismən</span>
+        <span><i class="sw sw-missed"></i>Buraxılmış</span>
+        <span><i class="sw sw-upcoming"></i>Gələcək</span>
+        <span><i class="sw sw-review"></i>Təkrar günü</span>
+      </div>
+      <div id="calendar" class="calendar"></div>
+    </div>
+  </section>
+
+  <!-- ==================== STATS ==================== -->
+  <section class="view" id="view-stats" hidden>
+    <div class="stat-grid" id="stats-grid"></div>
+    <div class="card">
+      <div class="card-head"><h2>🟩 Fəaliyyət xəritəsi</h2></div>
+      <div id="heatmap-stats" class="heatmap"></div>
+    </div>
+    <div class="grid-2">
+      <div class="card"><div class="card-head"><h2>📉 Son 7 gün</h2></div><canvas id="chart-week-2" class="chart" height="220"></canvas></div>
+      <div class="card"><div class="card-head"><h2>📈 Son 30 gün</h2></div><canvas id="chart-month-2" class="chart" height="220"></canvas></div>
+    </div>
+    <div class="card"><div class="card-head"><h2>🧭 Faza gedişatı</h2></div><div id="phase-bars-2" class="phase-bars"></div></div>
+    <div class="card"><div class="card-head"><h2>📤 İxrac / idxal</h2></div>
+      <div class="row-wrap">
+        <button class="btn btn-ghost" id="btn-export-json" type="button">⬇️ Progress (JSON)</button>
+        <button class="btn btn-ghost" id="btn-export-md" type="button">⬇️ Hesabat (Markdown)</button>
+        <button class="btn btn-ghost" id="btn-export-plan" type="button">⬇️ Plan (JSON)</button>
+        <label class="btn btn-ghost" for="import-file">⬆️ Progress idxal et (JSON)</label>
+        <input id="import-file" type="file" accept=".json,application/json" hidden />
+      </div>
+      <pre id="export-preview" class="preview" hidden></pre>
+    </div>
+  </section>
+
+  <!-- ==================== MENTOR ==================== -->
+  <section class="view" id="view-mentor" hidden>
+    <div class="card">
+      <div class="card-head"><h2>🧠 Mentor Məsləhəti</h2></div>
+      <p class="muted">Bu bölmə yol xəritəsini necə daha səmərəli keçmək, hansı layihələri qurmaq və işə necə götürülmək barədə real tövsiyələrdir.</p>
+      <div id="mentor-body" class="mentor-body"></div>
+    </div>
+    <div class="card">
+      <div class="card-head"><h2>💡 Həftəlik məsləhətlər (bütün həftələr)</h2></div>
+      <div id="mentor-tips" class="list-body"></div>
+    </div>
+  </section>
+
+  <!-- ==================== SETTINGS ==================== -->
+  <section class="view" id="view-settings" hidden>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-head"><h2>⚙️ Ümumi ayarlar</h2></div>
+        <label class="field">
+          <span>Başlanğıc tarixi (plan bu tarixdən hesablanır)</span>
+          <input type="date" id="set-start" />
+        </label>
+        <label class="field">
+          <span>Gündəlik hədəf (dəqiqə)</span>
+          <input type="number" id="set-daily" min="30" max="600" step="15" />
+        </label>
+        <label class="field">
+          <span>Ad (log fayllarında və hesabatlarda görünür)</span>
+          <input type="text" id="set-name" placeholder="Adın" />
+        </label>
+        <div class="row-between">
+          <span class="muted small">Dəyişikliklər avtomatik saxlanılır.</span>
+          <button class="btn btn-primary btn-sm" id="btn-save-settings" type="button">💾 Yadda saxla</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h2>🔗 GitHub sinxronizasiya</h2><span class="pill" id="gh-status">—</span></div>
+        <label class="field">
+          <span>Repo (owner/name)</span>
+          <input type="text" id="set-repo" placeholder="Shadow009-dark/ai-engineer-tracker" />
+        </label>
+        <label class="field">
+          <span>Branch</span>
+          <input type="text" id="set-branch" placeholder="main" />
+        </label>
+        <label class="field">
+          <span>Fine-grained Personal Access Token (yalnız brauzerdə saxlanılır)</span>
+          <input type="password" id="set-token" placeholder="github_pat_..." autocomplete="off" />
+        </label>
+        <div class="row-wrap">
+          <button class="btn btn-ghost btn-sm" id="btn-token-save" type="button">🔑 Tokeni yadda saxla</button>
+          <button class="btn btn-ghost btn-sm" id="btn-test-conn" type="button">🧪 Bağlantını yoxla</button>
+          <button class="btn btn-primary btn-sm" id="btn-sync-progress" type="button">⬆️ Progress-i göndər</button>
+          <button class="btn btn-primary btn-sm" id="btn-sync-all" type="button">⬆️ Hamısını göndər</button>
+          <button class="btn btn-ghost btn-sm" id="btn-flush" type="button">🔁 Növbəni boşalt</button>
+          <button class="btn btn-danger btn-sm" id="btn-token-clear" type="button">🗑️ Tokeni sil</button>
+        </div>
+        <p class="muted small" id="conn-result"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>🔑 Token necə yaradılır (addım-addım)</h2></div>
+      <ol class="steps">
+        <li>GitHub-da sağ yuxarıdaki profil şəklinə bas → <b>Settings</b>.</li>
+        <li>Sol menyuda ən aşağıda <b>Developer settings</b> → <b>Personal access tokens</b> → <b>Fine-grained tokens</b>.</li>
+        <li><b>Generate new token</b> düyməsinə bas.</li>
+        <li><b>Token name</b>: <code>ai-engineer-tracker</code> yaz.</li>
+        <li><b>Expiration</b>: 90 gün (və ya 1 il) seç. Vaxtı bitəndə yenisini yaradacaqsan.</li>
+        <li><b>Repository access</b>: <b>Only select repositories</b> → yalnız <code>ai-engineer-tracker</code> seç.</li>
+        <li><b>Permissions</b> → <b>Repository permissions</b> → <b>Contents</b>: <b>Read and write</b> seç. Başqa heç bir icazə vermə.</li>
+        <li><b>Generate token</b> düyməsinə bas və <code>github_pat_...</code> ilə başlayan açarı kopyala.</li>
+        <li>Açarı yuxarıdaki sahəyə yapışdır və <b>Tokeni yadda saxla</b>-ya bas. Token yalnız bu brauzerin <b>localStorage</b>-ində saxlanılır, heç vaxt repoya commit edilmir.</li>
+        <li>Sonra <b>Bağlantını yoxla</b> düyməsinə bas — "Bağlantı uğurludur" mesajını görməlisən.</li>
+      </ol>
+      <p class="warn small">⚠️ Tokeni ekran şəklində paylaşma, koda yazma, repoya commit etmə. Şübhələnsən dərhal GitHub-da <b>Revoke</b> et və yenisini yarat.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-head"><h2>⌨️ Klaviatura qısayolları</h2></div>
+      <div class="keys">
+        <div><kbd>D</kbd> növbəti tapşırığı tamamlandı kimi işarələ</div>
+        <div><kbd>S</kbd> günü keç (skip)</div>
+        <div><kbd>R</kbd> günü başqa tarixə köçür</div>
+        <div><kbd>N</kbd> qeyd sahəsinə fokuslan</div>
+        <div><kbd>/</kbd> planda axtarış</div>
+        <div><kbd>T</kbd> işıq/qaranlıq rejim</div>
+        <div><kbd>1</kbd>…<kbd>6</kbd> bölmələr arasında keçid</div>
+        <div><kbd>?</kbd> bu siyahını göstər</div>
+        <div><kbd>Ctrl</kbd>+<kbd>S</kbd> GitHub-a sinxronla</div>
+      </div>
+    </div>
+
+    <div class="card danger">
+      <div class="card-head"><h2>⚠️ Təhlükəli əməliyyatlar</h2></div>
+      <div class="row-wrap">
+        <button class="btn btn-danger" id="btn-reset-local" type="button">🧨 Yerli progress-i sıfırla</button>
+        <button class="btn btn-danger" id="btn-clear-queue" type="button">🧹 Sync növbəsini təmizlə</button>
+      </div>
+      <p class="muted small">Bu əməliyyatlar yalnız brauzerdəki məlumatlara təsir edir; GitHub-daki fayllar dəyişmir.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span id="footer-info">AI Engineer Tracker · Shadow009-dark</span>
+  <span class="muted small">Yerli rejimdə də işləyir — offline olduqda dəyişikliklər növbəyə düşür və sonra sinxronlaşır.</span>
+</footer>
+
+<div id="modal-root"></div>
+<div id="toast" class="toast" hidden></div>
+
+<script src="github-sync.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <title>Sync testləri</title>
+  <style>
+    body { font-family: ui-monospace, Menlo, Consolas, monospace; background: #0d1117; color: #e6edf3; padding: 24px; }
+    h1 { font-size: 18px; }
+    .ok { color: #3fb950; }
+    .fail { color: #f85149; }
+    .info { color: #8b949e; }
+    li { margin: 2px 0; }
+    #summary { font-size: 16px; font-weight: 700; margin: 12px 0; }
+  </style>
+</head>
+<body>
+  <h1>GitHub Contents API sync — testlər (mock API)</h1>
+  <div id="summary">Gözlənilir...</div>
+  <ul id="results"></ul>
+  <hr />
+  <p class="info">
+    Bu səhifə <code>github-sync.js</code> məntiqini real şəbəkə olmadan yoxlayır:
+    base64/UTF-8 çevrilməsi, sha ilə update, konflikt retry, offline növbə, merge məntiqi.
+  </p>
+  <script src="../github-sync.js"></script>
+  <script src="sync-tests.js"></script>
+</body>
+</html>

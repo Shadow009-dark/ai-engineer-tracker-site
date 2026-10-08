@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "repo": "Shadow009-dark/ai-engineer-tracker",
+  "branch": "main",
+  "startDate": null,
+  "updatedAt": null,
+  "days": {},
+  "activity": {},
+  "planOverrides": {
+    "removed": [],
+    "added": [],
+    "order": {}
+  },
+  "sync": {
+    "lastSync": null,
+    "lastError": null,
+    "pending": 0
+  },
+  "log": []
+}
