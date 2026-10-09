@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_1%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_2%2F180-0%25-green?style=flat-square)
 
-**Gün 1/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 2/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 1 — Mühit qurulumu: Python, VS Code, terminal |
+| Bugünkü mövzu | Gün 2 — Python təkrarı I: dəyişənlər, şərtlər, dövrlər, funksiyalar |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-10-08 |
+| Son yenilənmə | 2026-10-09 |
 
 #### Faza gedişatı
 
