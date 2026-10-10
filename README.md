@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_2%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_3%2F180-0%25-green?style=flat-square)
 
-**Gün 2/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 3/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 2 — Python təkrarı I: dəyişənlər, şərtlər, dövrlər, funksiyalar |
+| Bugünkü mövzu | Gün 3 — Python təkrarı II: kolleksiyalar və comprehension |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-10-09 |
+| Son yenilənmə | 2026-10-10 |
 
 #### Faza gedişatı
 
