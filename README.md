@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_11%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_12%2F180-0%25-green?style=flat-square)
 
-**Gün 11/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 12/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 11 — GitHub: profil, PR axını, ilk açıq mənbə addımı |
+| Bugünkü mövzu | Gün 12 — Linux I: terminal, fayl sistemi, icazələr |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-10-18 |
+| Son yenilənmə | 2026-10-19 |
 
 #### Faza gedişatı
 
