@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_13%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_14%2F180-0%25-green?style=flat-square)
 
-**Gün 13/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 14/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 13 — Linux II: pipe, grep, mühit dəyişənləri, SSH |
+| Bugünkü mövzu | Gün 14 — Həftə 2 təkrarı: Git, GitHub və alət zənciri |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-10-20 |
+| Son yenilənmə | 2026-10-21 |
 
 #### Faza gedişatı
 
