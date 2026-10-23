@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_15%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_16%2F180-0%25-green?style=flat-square)
 
-**Gün 15/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 16/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 15 — Bash skriptləri və Makefile |
+| Bugünkü mövzu | Gün 16 — Testlər, logging və kod keyfiyyəti |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-10-22 |
+| Son yenilənmə | 2026-10-23 |
 
 #### Faza gedişatı
 
