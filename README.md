@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_30%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_31%2F180-0%25-green?style=flat-square)
 
-**Gün 30/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 31/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 30 — Təsadüfi dəyişənlər və paylanmalar |
+| Bugünkü mövzu | Gün 31 — Gözləmə, dispersiya, kovariasiya, korrelyasiya |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-06 |
+| Son yenilənmə | 2026-11-07 |
 
 #### Faza gedişatı
 
