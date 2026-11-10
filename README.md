@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_33%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_34%2F180-0%25-green?style=flat-square)
 
-**Gün 33/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 34/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 33 — Statistik nəticə: hipotez testi, p-value, etibar intervalı |
+| Bugünkü mövzu | Gün 34 — MLE, MAP və Bayes nəticəsi |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-09 |
+| Son yenilənmə | 2026-11-10 |
 
 #### Faza gedişatı
 
