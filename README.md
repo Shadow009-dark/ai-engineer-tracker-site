@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_36%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_37%2F180-0%25-green?style=flat-square)
 
-**Gün 36/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 37/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 36 — İnformasiya nəzəriyyəsi: entropiya və cross-entropy |
+| Bugünkü mövzu | Gün 37 — Hesablama qrafiki və autograd |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-12 |
+| Son yenilənmə | 2026-11-13 |
 
 #### Faza gedişatı
 
