@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_41%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_42%2F180-0%25-green?style=flat-square)
 
-**Gün 41/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 42/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 41 — Faza 2 layihəsi: sıfırdan xətti reqressiya |
+| Bugünkü mövzu | Gün 42 — Həftə 6 təkrarı: Optimizasiya və informasiya nəzəriyyəsi |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-17 |
+| Son yenilənmə | 2026-11-18 |
 
 #### Faza gedişatı
 
