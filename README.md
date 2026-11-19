@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_42%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_43%2F180-0%25-green?style=flat-square)
 
-**Gün 42/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 43/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 42 — Həftə 6 təkrarı: Optimizasiya və informasiya nəzəriyyəsi |
+| Bugünkü mövzu | Gün 43 — NumPy I: ndarray, shape, indexing, broadcasting |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-18 |
+| Son yenilənmə | 2026-11-19 |
 
 #### Faza gedişatı
 
