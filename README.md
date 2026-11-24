@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_47%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_48%2F180-0%25-green?style=flat-square)
 
-**Gün 47/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 48/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 47 — Pandas II: filtr, sıralama, groupby |
+| Bugünkü mövzu | Gün 48 — Pandas III: merge, join, pivot |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-23 |
+| Son yenilənmə | 2026-11-24 |
 
 #### Faza gedişatı
 
