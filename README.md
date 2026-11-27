@@ -193,20 +193,20 @@ README-dəki bu bloku yeniləyir:
 
 ### 📊 Gedişat (avtomatik yenilənir)
 
-![Progress](https://img.shields.io/badge/Gün_50%2F180-0%25-green?style=flat-square)
+![Progress](https://img.shields.io/badge/Gün_51%2F180-0%25-green?style=flat-square)
 
-**Gün 50/180 · 0% tamamlandı · 0 günlük streak**
+**Gün 51/180 · 0% tamamlandı · 0 günlük streak**
 
 `░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░`
 
 | Göstərici | Dəyər |
 | --- | --- |
-| Bugünkü mövzu | Gün 50 — Pandas IV: boş dəyərlər, tiplər, datetime |
+| Bugünkü mövzu | Gün 51 — Pandas V: string əməliyyatları, böyük fayllar, performans |
 | Tamamlanmış gün | 0 (keçilmiş: 0) |
 | Tamamlanmış element | 0 / 1985 |
 | Ümumi öyrənmə vaxtı | 0 saat |
 | Başlanğıc tarixi | 2026-10-08 |
-| Son yenilənmə | 2026-11-26 |
+| Son yenilənmə | 2026-11-27 |
 
 #### Faza gedişatı
 
